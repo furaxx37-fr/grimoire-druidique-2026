@@ -115,6 +115,34 @@
             background: #fbbf24; 
             border-radius: 50% 0 0 50%; 
         }
+        
+        /* Styles pour les animations fade-in et observe */
+        .observe {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-in-out;
+        }
+        
+        .fade-in {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+        
+        /* Animation pour les éléments qui apparaissent */
+        .animate-fade-in {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 <body class="mystical-bg text-white font-crimson">
